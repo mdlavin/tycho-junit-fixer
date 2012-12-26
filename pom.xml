@@ -110,4 +110,15 @@
       </build>
     </profile>
   </profiles>
+  <url>https://github.com/mdlavin/tycho-junit-fixer</url>
+  <description>A Maven plugin to avoid NPEs in Tycho's JUnit running code</description>
+  <issueManagement>
+  	<url>https://github.com/mdlavin/tycho-junit-fixer/issues</url>
+  	<system>GitHub</system>
+  </issueManagement>
+  <scm>
+  	<url>scm:git:git@github.com:mdlavin/tycho-junit-fixer.git</url>
+  	<connection>scm:git:git@github.com:mdlavin/tycho-junit-fixer.git</connection>
+  	<developerConnection>scm:git:git@github.com:mdlavin/tycho-junit-fixer.git</developerConnection>
+  </scm>
 </project>
