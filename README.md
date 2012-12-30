@@ -25,8 +25,6 @@ following entry to your pom.xml file:
         <version>0.0.1-SNAPSHOT</version>
         <executions>
           <execution>
-            <id>add-junit-bundle-dependency</id>
-            <phase>generate-sources</phase>
             <goals>
               <goal>add-junit-bundle-dependency</goal>
             </goals>

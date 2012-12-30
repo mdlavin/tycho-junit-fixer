@@ -33,7 +33,7 @@ import org.apache.maven.plugins.annotations.Parameter;
  * Goal which fixes MANIFEST.MF files to require junit plugin instead of
  * using Import-Package.
  */
-@Mojo( name = "add-junit-bundle-dependency", defaultPhase = LifecyclePhase.GENERATE_SOURCES )
+@Mojo( name = "add-junit-bundle-dependency", defaultPhase = LifecyclePhase.GENERATE_RESOURCES )
 public class AddJunitBundleDependency
     extends AbstractMojo
 {
