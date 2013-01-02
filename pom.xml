@@ -6,6 +6,12 @@
   <artifactId>tycho.junit.fixer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
+  
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
 
   <name>tycho.junit.fixer Maven Plugin</name>
 
@@ -45,6 +51,15 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>    
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-plugin-plugin</artifactId>
@@ -110,6 +125,23 @@
       </build>
     </profile>
   </profiles>
+  
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>  
+  
+  <developers>
+    <developer>
+      <id>matt.lavin@gmail.com</id>
+      <name>Matt Lavin</name>
+      <email>matt.lavin@gmail.com</email>
+    </developer>
+  </developers>
+  
   <url>https://github.com/mdlavin/tycho-junit-fixer</url>
   <description>A Maven plugin to avoid NPEs in Tycho's JUnit running code</description>
   <issueManagement>
@@ -117,7 +149,7 @@
   	<system>GitHub</system>
   </issueManagement>
   <scm>
-  	<url>scm:git:git@github.com:mdlavin/tycho-junit-fixer.git</url>
+  	<url>git@github.com:mdlavin/tycho-junit-fixer.git</url>
   	<connection>scm:git:git@github.com:mdlavin/tycho-junit-fixer.git</connection>
   	<developerConnection>scm:git:git@github.com:mdlavin/tycho-junit-fixer.git</developerConnection>
   </scm>
